@@ -127,26 +127,22 @@ table {
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
-
 .container {
   max-width: 1109px;
   width: 100%;
   margin: 0 auto;
   display: block;
 }
-
 .main-header {
   float: left;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 17px;
 }
-
 .logo {
   margin-top: 8px;
 }
@@ -157,7 +153,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .nav-bar ul {
   margin-right: 54px;
   padding-top: 9px;
@@ -165,21 +160,17 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .nav-bar a {
   color: #2f281e;
   text-decoration: none;
 }
-
 .nav-bar li {
   display: inline-block;
   margin-right: 27px;
 }
-
 .nav-bar li:last-child {
   margin-right: 0;
 }
-
 .btn {
   font-size: 16px;
   padding: 0 23px 0 25px;
@@ -192,7 +183,6 @@ body {
   margin-right: 14px;
   text-decoration: none;
 }
-
 .btn-alt {
   background: transparent;
   color: black !important;
@@ -201,30 +191,28 @@ body {
 .btn:last-child {
   margin-right: 0;
 }
-
 .flex-container {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
 }
-
 .main-content {
   width: 100%;
   padding: 150px 0;
 }
-
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+.hero-left {
+  flex: 1;
+}
 .hero-right {
   display: flex;
   justify-content: flex-end;
 }
-
 .hero-right img {
   width: 520px;
   height: auto;
@@ -234,7 +222,6 @@ body {
   align-items: center;
   gap: 24px;
 }
-
 .main-content h1 {
   font-weight: 700;
   font-size: 44px;
@@ -242,7 +229,6 @@ body {
   color: #2f281e;
   margin-bottom: 22px;
 }
-
 .main-content p {
   font-weight: 400;
   font-size: 18px;
@@ -251,33 +237,28 @@ body {
   max-width: 458px;
   margin-bottom: 40px;
 }
-
 .watch-link {
   text-decoration: underline;
   font-weight: 600;
   color: #ff9900;
 }
-
 .pjesa2 {
   display: flex;
-  padding-top: 50px;
+  padding-top: 120px;
 }
-
 .container h2 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 48px;
   color: #2f281e;
   text-align: center;
   margin: 80px 0 36px;
 }
-
 .card img {
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
 }
-
 .card h3 {
   font-weight: 600;
   font-size: 22px;
@@ -285,14 +266,12 @@ body {
   color: #2f281e;
   margin-bottom: 10px;
 }
-
 .card p {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #544837;
 }
-
 .button {
   display: flex;
   justify-content: center;
@@ -302,4 +281,94 @@ body {
   line-height: 24px;
   height: auto;
   padding: 12px 22px;
+}
+.design {
+  padding-top: 100px;
+}
+.design .small-title {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.design .list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.design .list h4 {
+  color: #2f281e;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.design h2,
+.managers h2{
+  text-align: left;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2f281e;
+  margin: 0 0 24px;
+}
+.design .hero-left > h2 + p,
+.intro{
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
+  max-width: 520px;
+  margin-bottom: 24px;
+}
+.design .list p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
+  max-width: 486px;
+  margin-bottom: 20px;
+}
+.design .hero {
+  align-items: flex-start;
+}
+.hero--reverse {
+  flex-direction: row-reverse;
+}
+.managers {
+  padding: 100px 0;
+}
+.managers .hero {
+  align-items: flex-start;
+  gap: 50px;
+}
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 540px;
+}
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.check-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+}
+.checklist li span {
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
+}
+.managers .small-title {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.managers + .design {
+  padding-top: 0;
+}
+
+.design .hero-right img,
+.managers .hero-right img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
 }
